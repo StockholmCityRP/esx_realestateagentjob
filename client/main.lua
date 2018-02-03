@@ -45,6 +45,7 @@ function OpenRealestateAgentMenu()
     'default', GetCurrentResourceName(), 'realestateagent',
     {
       title    = _U('realtor'),
+	  align    = 'bottom-right',
       elements = elements
     },
     function(data, menu)
@@ -108,6 +109,7 @@ function OpenPropertyMenu()
           ESX.UI.Menu.Open(
             'dialog', GetCurrentResourceName(), 'sell_property_amount',
             {
+			  align = 'bottom-right',
               title = _U('amount')
             },
             function(data2, menu)
@@ -147,6 +149,7 @@ function OpenPropertyMenu()
           ESX.UI.Menu.Open(
             'dialog', GetCurrentResourceName(), 'rent_property_amount',
             {
+			  align = 'bottom-right',
               title = _U('amount')
             },
             function(data2, menu)
